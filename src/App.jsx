@@ -2,6 +2,7 @@ import Swiper from "./assets/Component/Swiper";
 import Banner from "./assets/Component/Banner";
 import Header from "./assets/Component/Header";
 import Section from "./assets/Component/Section";
+import Footer from "./assets/Component/Footer";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Banner />
       <Swiper />
       <Section />
+      <Footer />
     </>
   );
 };
