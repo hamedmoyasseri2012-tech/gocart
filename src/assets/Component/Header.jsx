@@ -1,11 +1,12 @@
+import { Link } from "react-router";
 const Header = () => {
   return (
     <>
       <div className="flex relative pt-6 pl-4 pr-4 pb-4 justify-between">
         <div>
-          <h1 className="text-4xl text-[#2f4259] font-bold">
+          <Link to = "App" className="text-4xl text-[#2f4259] font-bold">
             <span className="text-[#00a73a]">go</span>cart.
-          </h1>
+          </Link>
           <p className="border absolute top-3 left-30 bg-[#00c94f] w-11.5 h-6 text-white flex justify-center items-center rounded-2xl">
             Plus
           </p>
