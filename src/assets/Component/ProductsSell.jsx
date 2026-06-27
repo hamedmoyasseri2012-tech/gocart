@@ -18,7 +18,7 @@ const ProductsSell = () => {
             </i>
           </Link>
         </div>
-        <div className="grid grid-cols-2 justify-items-center items-center gap-3">
+        <div className="grid grid-cols-2 justify-items-center items-center gap-3 sm:gird sm:grid-cols-4 sm:w-276 sm:h-170">
           <div>1</div>
           <div>2</div>
           <div>3</div>

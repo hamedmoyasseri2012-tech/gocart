@@ -1,7 +1,9 @@
+// import { useEffect, useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 
 const ShopPage = () => {
+ 
   return (
     <>
       <div className="flex flex-col gap-4 justify-center pl-2">

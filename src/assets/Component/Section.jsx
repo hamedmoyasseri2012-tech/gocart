@@ -5,17 +5,20 @@ import { FaHeadphones } from "react-icons/fa";
 const Section = () => {
   return (
     <>
-      <div className="flex flex-col gap-3 justify-center items-center  pt-6">
+      <div className="flex flex-col justify-center items-center pt-4">
+        <h1 className="text-[#272835] text-2xl font-medium">
+          Our Specifications
+        </h1>
         <div className="flex flex-col text-center gap-3">
-          <h1 className="text-[#272835] text-2xl font-medium">
-            Our Specifications
-          </h1>
           <p className="text-[#898b8a] w-95.5 h-15">
             We offer top-tier service and convenience to ensure your shopping
             experience is smooth, secure and completely hassle-free.
           </p>
         </div>
-        <div className="flex flex-col pt-8 gap-6">
+      </div>
+      <div></div>
+      <div className="flex flex-col gap-3 justify-center items-center  pt-6 ">
+        <div className="flex flex-col pt-8 gap-6 sm:flex-row">
           <div className="bg-[#f0fdf6] relative flex flex-col justify-center items-center text-center pt-4 gap-4 w-100 h-44 rounded-xl">
             <h1 className="text-[#1d293d] text-2xl font-medium">
               Free Shipping
@@ -51,6 +54,8 @@ const Section = () => {
             </i>
           </div>
         </div>
+      </div>
+      <div className="sm:flex sm:flex-col sm:justify-center sm:items-center">
         <div className="flex flex-col text-center gap-3 pt-20">
           <h1 className="text-[#272835] text-2xl font-medium">
             Join Newsletter
@@ -59,16 +64,16 @@ const Section = () => {
             Subscribe to get exclusive deals, new arrivals, and insider updates
             delivered straight to your inbox every week.
           </p>
-          <div className=" flex justify-center items-center pt-4 pl-8 ">
-            <input
-              className="bg-[#f1f4f9] border pl-2 h-13 rounded-xl w-full "
-              type="text"
-              placeholder="Enter your email address"
-            />
-            <button className="text-white right-20 w-24 text-xs relative h-11 rounded-xl bg-[#00c94f]">
-              Get Updates
-            </button>
-          </div>
+        </div>
+        <div className=" flex justify-center items-center pt-4 pl-8 ">
+          <input
+            className="bg-[#f1f4f9] border outline-2 outline-white border-[#f1f4f9] pl-2 h-13 rounded-xl w-full sm:w-155 sm:flex sm:justify-center sm:items-center sm:h-14 sm:rounded-3xl"
+            type="text"
+            placeholder="Enter your email address"
+          />
+          <button className="text-white right-20 w-24 text-xs relative h-11 rounded-xl bg-[#00c94f] sm:right-34 sm:rounded-3xl sm:w-33.5 sm:h-11">
+            Get Updates
+          </button>
         </div>
       </div>
     </>

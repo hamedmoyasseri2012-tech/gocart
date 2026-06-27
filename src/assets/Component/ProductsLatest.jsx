@@ -14,7 +14,7 @@ const ProductsLatest = () => {
           </i>
         </Link>
       </div>
-      <div className="grid grid-cols-2 justify-items-center items-center gap-3">
+      <div className="grid grid-cols-2 justify-items-center items-center gap-3 sm:grid sm:grid-cols-4 sm:w-276 sm:h-79 sm:justify-center sm:items-center">
         <div>1</div>
         <div>2</div>
         <div>3</div>
