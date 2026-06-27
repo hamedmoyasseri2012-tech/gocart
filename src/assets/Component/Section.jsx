@@ -5,12 +5,14 @@ import { FaHeadphones } from "react-icons/fa";
 const Section = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center pt-4">
+      <div
+        className="flex flex-col justify-center items-center pt-4 sm:gap-4"
+      >
         <h1 className="text-[#272835] text-2xl font-medium">
           Our Specifications
         </h1>
-        <div className="flex flex-col text-center gap-3">
-          <p className="text-[#898b8a] w-95.5 h-15">
+        <div className="flex flex-col text-center gap-3 sm:gap-5">
+          <p className="text-[#898b8a] w-95.5 h-15 sm:w-lg sm:h-10">
             We offer top-tier service and convenience to ensure your shopping
             experience is smooth, secure and completely hassle-free.
           </p>
@@ -18,7 +20,7 @@ const Section = () => {
       </div>
       <div></div>
       <div className="flex flex-col gap-3 justify-center items-center  pt-6 ">
-        <div className="flex flex-col pt-8 gap-6 sm:flex-row">
+        <div className="flex flex-col pt-8 gap-6 sm:flex-row sm:pt-16">
           <div className="bg-[#f0fdf6] relative flex flex-col justify-center items-center text-center pt-4 gap-4 w-100 h-44 rounded-xl">
             <h1 className="text-[#1d293d] text-2xl font-medium">
               Free Shipping
@@ -56,7 +58,7 @@ const Section = () => {
         </div>
       </div>
       <div className="sm:flex sm:flex-col sm:justify-center sm:items-center">
-        <div className="flex flex-col text-center gap-3 pt-20">
+        <div className="flex flex-col justify-center items-center text-center gap-3 pt-20">
           <h1 className="text-[#272835] text-2xl font-medium">
             Join Newsletter
           </h1>

@@ -12,18 +12,20 @@ const Footer = () => {
       <div className="flex flex-col gap-3 ">
         <div className="flex flex-col gap-4 relative  pt-6 pl-4 pr-4 pb-4 justify-between sm:pb-16 sm:flex-row sm:justify-between sm:items-center sm:pl-20">
           <div className="sm:gap-3 sm:flex sm:flex-col">
-            <div>
-              <h1 className="text-4xl text-[#2f4259] font-bold">
-                <span className="text-[#00a73a]">go</span>cart.
-              </h1>
-            </div>
-            <div>
-              <p className="text-[#938f9c] w-95.75 h-20 ">
-                Welcome to gocart, your ultimate destination for the latest and
-                smartest gadgets. From smartphones and smartwatches to essential
-                accessories, we bring you the best in innovation — all in one
-                place.
-              </p>
+            <div className="flex flex-col gap-4">
+              <div>
+                <h1 className="text-4xl text-[#2f4259] font-bold">
+                  <span className="text-[#00a73a]">go</span>cart.
+                </h1>
+              </div>
+              <div>
+                <p className="text-[#938f9c] w-95.75 h-20 ">
+                  Welcome to gocart, your ultimate destination for the latest
+                  and smartest gadgets. From smartphones and smartwatches to
+                  essential accessories, we bring you the best in innovation —
+                  all in one place.
+                </p>
+              </div>
             </div>
             <div className="flex gap-4 pt-8 ">
               <i className="w-7 h-7 bg-[#f1f4fb] border-[#f1f4fb] flex justify-center items-center border rounded-full">
