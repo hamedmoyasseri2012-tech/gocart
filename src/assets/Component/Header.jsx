@@ -15,12 +15,12 @@ const Header = () => {
           </p>
         </div>
 
-        <di
+        <div
           v
-          className="sm:flex sm:gap-3 sm:items-center sm:justify-around sm:pr-32  "
+          className="sm:flex sm:gap-8 sm:items-center sm:justify-around sm:pr-32  "
         >
           <div className="hidden sm:flex sm:gap-2 sm:items-center sm:justify-center ">
-            <ul className="flex gap-2 items-center sm:text-[#796c84]">
+            <ul className="flex gap-2 items-center sm:text-[#796c84] sm:gap-6">
               <li>Home</li>
               <li>Shop</li>
             </ul>
@@ -30,7 +30,7 @@ const Header = () => {
                 type="text"
                 placeholder="Search Products "
               />
-              <i className="sm:absolute sm:right-130 sm:text-[#676d79]">
+              <i className="sm:absolute sm:right-135 sm:text-[#676d79]">
                 <CiSearch />
               </i>
             </div>
@@ -49,7 +49,7 @@ const Header = () => {
           <button className="border w-22.5 h-8 bg-[#615fff] rounded-xl text-white border-[#615fff]">
             Login
           </button>
-        </di>
+        </div>
       </div>
       <div className="border-b-2 h-2 border-gray-300"></div>
     </>
