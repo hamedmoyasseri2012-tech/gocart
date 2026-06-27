@@ -1,9 +1,28 @@
 // import { useEffect, useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import { useState, useEffect } from "react";
 
 const ShopPage = () => {
- 
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const getProducts = async () => {
+      try {
+        const response = await fetch(
+          "https://api.escuelajs.co/api/v1/products?categoryId=2",
+        );
+        const data = await response.json();
+
+        setProducts(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    getProducts();
+  }, []);
+
   return (
     <>
       <div className="flex flex-col gap-4 justify-center pl-2">
@@ -13,21 +32,21 @@ const ShopPage = () => {
             <span className="text-[#869aae] ">All</span> Products
           </h1>
         </div>
-        <div className="grid grid-cols-2 gap-3 sm:grid sm:grid-cols-4 sm:w-305.5 sm:h-261 sm:pl-16 ">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
-          <div>10</div>
-          <div>11</div>
-          <div>12</div>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:pl-16">
+          {products.map((product) => (
+            <div key={product.id} className="border p-3 rounded">
+              <img
+                src={product.image}
+                alt={product.title}
+                className="w-full h-40 object-contain"
+              />
+              <h2>{product.title}</h2>
+              <p>${product.price}</p>
+            </div>
+          ))}
         </div>
       </div>
+
       <Footer />
     </>
   );
