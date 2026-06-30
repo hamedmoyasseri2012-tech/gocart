@@ -4,37 +4,41 @@ import { IoMdArrowForward } from "react-icons/io";
 const Banner = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center pt-6 gap-4 sm:flex-row sm:justify-center sm:items-center">
-        <div className="bg-[#b9f7ce] border sm:w-219 sm:h-119 sm:flex sm:justify-between  border-[#b9f7ce] rounded-xl w-95.75 h-172 flex flex-col pl-4 gap-4 pt-4 justify-start items-start">
-          <div className="gap-6 flex flex-col sm:pt-20 sm:pl-20">
-            <div className="border bg-[#7af1a8] border-[#7af1a8] w-fit h-8 rounded-xl  flex justify-center items-center">
-              <p className="text-center flex justify-center items-center text-xs text-[#1dab62]">
-                <span className="bg-[#00a73f] rounded-xl font-bold text-white justify-center items-center flex text-center border w-14.25 h-6">
-                  News
-                </span>
-                Free Shipping on Orders Above $50!
-              </p>
-              <i className="text-[#1dab62]">
-                <FaChevronRight />
-              </i>
+      <div className="flex relative flex-col justify-center items-center pt-6 gap-4 sm:flex-row sm:justify-center sm:items-center">
+        <div className="bg-[#b9f7ce] border  sm:w-219 sm:h-119 sm:flex sm:justify-between  border-[#b9f7ce] rounded-xl w-95.75 h-172 flex flex-col pl-4 gap-4 pt-4 justify-start items-start">
+          <div className="sm:flex sm:flex-row">
+            <div className="gap-6 flex flex-col sm:pt-20 sm:pl-14">
+              <div className="border bg-[#7af1a8] border-[#7af1a8] w-fit h-8 rounded-xl  flex justify-center items-center">
+                <p className="text-center flex justify-center items-center text-xs text-[#1dab62]">
+                  <span className="bg-[#00a73f] rounded-xl font-bold text-white justify-center items-center flex text-center border w-14.25 h-6">
+                    News
+                  </span>
+                  Free Shipping on Orders Above $50!
+                </p>
+                <i className="text-[#1dab62]">
+                  <FaChevronRight />
+                </i>
+              </div>
+              <div className="sm:text-4xl sm:font-semibold sm:h-28 text-3xl w-80 h-18 bg-linear-to-r from-[#45605d] via-[#6b9f79] to-[#84cb77] bg-clip-text text-transparent">
+                <h2>Gadgets you'll love. Prices you'll trust.</h2>
+              </div>
+              <div className="flex flex-col ">
+                <p className="text-[#1d293d] text-2xl font-medium">
+                  Starts from
+                </p>
+                <p className="text-[#1d293d] text-4xl font-medium">$4.90</p>
+              </div>
+              <div className="bg-[#1d2a3d] sm:w-48 sm:h-14 flex justify-center items-center text-white rounded-xl font-medium w-36 h-10">
+                <button>Learn More</button>
+              </div>
             </div>
-            <div className="sm:text-4xl sm:font-semibold sm:h-28 text-3xl w-80 h-18 bg-linear-to-r from-[#45605d] via-[#6b9f79] to-[#84cb77] bg-clip-text text-transparent">
-              <h2>Gadgets you'll love. Prices you'll trust.</h2>
+            <div>
+              <img
+                className=" w-95.5 h-101 top-77 absolute  left-6 sm:top-24 sm:left-130"
+                src="./public/hero_model.png"
+                alt=""
+              />
             </div>
-            <div className="flex flex-col ">
-              <p className="text-[#1d293d] text-2xl font-medium">Starts from</p>
-              <p className="text-[#1d293d] text-4xl font-medium">$4.90</p>
-            </div>
-            <div className="bg-[#1d2a3d] sm:w-48 sm:h-14 flex justify-center items-center text-white rounded-xl font-medium w-36 h-10">
-              <button>Learn More</button>
-            </div>
-          </div>
-          <div>
-            <img
-              className="absolute w-95.5 h-101 top-99 left-10 sm:top-46 sm:left-110"
-              src="./public/hero_model.png"
-              alt=""
-            />
           </div>
         </div>
         <div className="gap-2 flex flex-col sm:gap-4 sm:">

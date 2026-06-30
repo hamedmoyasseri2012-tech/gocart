@@ -19,7 +19,7 @@ const Footer = () => {
                 </h1>
               </div>
               <div>
-                <p className="text-[#938f9c] w-95.75 h-20 ">
+                <p className="text-[#938f9c] w-95 h-20 ">
                   Welcome to gocart, your ultimate destination for the latest
                   and smartest gadgets. From smartphones and smartwatches to
                   essential accessories, we bring you the best in innovation —
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <div className="flex justify-between  items-center sm:flex sm:flex-row sm:gap-16 sm:pr-16 sm:justify-between sm:items-center">
+            <div className="grid grid-cols-2 gap-3  items-center sm:flex sm:flex-row sm:gap-16 sm:pr-16 sm:justify-between sm:items-center">
               <div className="flex flex-col gap-3">
                 <h2 className="text-[#524e74] font-medium">Products</h2>
                 <ul className="text-[#7c7f97] font-medium sm:text-xs sm:gap-3 sm:flex sm:flex-col">

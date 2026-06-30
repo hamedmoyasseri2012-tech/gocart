@@ -6,11 +6,11 @@ const Header = () => {
   return (
     <>
       <div className="flex relative pt-6 pl-4 pr-4 pb-4 justify-between sm:pl-24">
-        <div>
-          <Link to="App" className="text-4xl text-[#2f4259] font-bold">
+        <div className="relative">
+          <Link to="/" className="text-4xl text-[#2f4259] font-bold">
             <span className="text-[#00a73a] ">go</span>cart.
           </Link>
-          <p className="border absolute top-3 left-30 sm:left-52 sm:top-6 bg-[#00c94f] w-11.5 h-6 text-white flex justify-center items-center rounded-2xl">
+          <p className="border absolute top-1 left-28 sm:left-27 sm:-top-1 bg-[#00c94f] w-11.5 h-6 text-white flex justify-center items-center rounded-2xl">
             Plus
           </p>
         </div>
@@ -21,16 +21,16 @@ const Header = () => {
         >
           <div className="hidden sm:flex sm:gap-2 sm:items-center sm:justify-center ">
             <ul className="flex gap-2 items-center sm:text-[#796c84] sm:gap-6">
-              <li>Home</li>
-              <li>Shop</li>
+              <Link to="/">Home</Link>
+              <Link to="/shop-page">Shop</Link>
             </ul>
-            <div className="hidden sm:flex sm:justify-center sm:items-center sm:font-medium sm:border-[#f1f4f9] sm:border sm:rounded-xl sm:bg-[#f1f4f9]">
+            <div className="hidden relative sm:flex sm:justify-center sm:items-center sm:font-medium sm:border-[#f1f4f9] sm:border sm:rounded-xl sm:bg-[#f1f4f9]">
               <input
-                className="pl-6"
+                className="pl-8 pr-3 py-2"
                 type="text"
                 placeholder="Search Products "
               />
-              <i className="sm:absolute sm:right-135 sm:text-[#676d79]">
+              <i className="sm:absolute sm:left-2 sm:top-1/2 -translate-y-1/2 sm:text-[#676d79]">
                 <CiSearch />
               </i>
             </div>
@@ -43,7 +43,7 @@ const Header = () => {
                   0
                 </span>
               </div>
-              <p>Cart</p>
+              <Link to="/cart" >Cart</Link>
             </div>
           </div>
           <button className="border w-22.5 h-8 bg-[#615fff] rounded-xl text-white border-[#615fff]">

@@ -1,4 +1,10 @@
 @import "tailwindcss";
  body{
-    height: h-screen;
+    height: 100vh;
  }
+ /* * {
+  outline: 1px solid red;
+} */
+:root{
+   height: 100%;
+}
