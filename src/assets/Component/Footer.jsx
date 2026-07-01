@@ -9,7 +9,7 @@ import { FaRegEnvelope } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <div className="flex flex-col gap-3 ">
+      <div className="flex flex-col gap-3  overflow-x-hidden">
         <div className="flex flex-col gap-4 relative  pt-6 pl-4 pr-4 pb-4 justify-between sm:pb-16 sm:flex-row sm:justify-between sm:items-center sm:pl-20">
           <div className="sm:gap-3 sm:flex sm:flex-col">
             <div className="flex flex-col gap-4">
@@ -19,7 +19,7 @@ const Footer = () => {
                 </h1>
               </div>
               <div>
-                <p className="text-[#938f9c] w-95 h-20 ">
+                <p className="text-[#938f9c] w-96 h-20  ">
                   Welcome to gocart, your ultimate destination for the latest
                   and smartest gadgets. From smartphones and smartwatches to
                   essential accessories, we bring you the best in innovation —
@@ -53,9 +53,9 @@ const Footer = () => {
                   <li>Laptops</li>
                 </ul>
               </div>
-              <div className="flex flex-col gap-3 ">
+              <div className="flex flex-col gap-3 sm:flex sm:flex-col sm:mt-0 ">
                 <h2 className="text-[#524e74] font-medium">Website</h2>
-                <ul className="text-[#7c7f97] font-medium sm:text-xs sm:gap-3 sm:flex sm:flex-col">
+                <ul className="text-[#7c7f97] font-medium sm:text-xs sm:gap-3 sm:flex  sm:flex-col">
                   <li>Home</li>
                   <li>Privacy policy</li>
                   <li>Become Plus Member</li>

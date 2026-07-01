@@ -1,6 +1,10 @@
+import Footer from "./Footer";
+import Header from "./Header";
+
 const Product = () => {
   return <div>
-    
+    <Header/>
+    <Footer/>
   </div>;
 };
 

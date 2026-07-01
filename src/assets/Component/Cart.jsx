@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Footer from "./Footer";
 import { Link } from "react-router";
 import { FaArrowRight } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
@@ -67,18 +68,18 @@ const Cart = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col bg-[#fdfeff] justify-start items-start p-4 gap-6 border h-125 w-90 ml-10 border-[#e2e8f0] rounded-xl sm:flex sm:mt-28 sm:mr-4 ">
+        <div className="flex flex-col bg-[#fdfeff] justify-start items-start p-4 gap-6 border h-135 w-95 ml-10 border-[#e2e8f0] rounded-xl sm:flex sm:mt-28 sm:mr-4 ">
           <h1 className="uppercase font-medium">Payment Summary</h1>
           <p className="text-[#90a1b9]">Payment Method</p>
           <div className="flex flex-col">
             <div className="flex gap-2">
-              <input className="text-[#90a1b9]" type="radio" />
+              <input className="text-[#90a1b9] accent-gray-500" type="radio" />
               <label className="text-[#90a1b9]" htmlFor="">
                 COD
               </label>
             </div>
             <div className="flex gap-2">
-              <input className="text-[#90a1b9]" type="radio" />
+              <input className="text-[#90a1b9] accent-gray-500" type="radio" />
               <label className="text-[#90a1b9]" htmlFor="">
                 Stripe Payment
               </label>
@@ -102,9 +103,50 @@ const Cart = () => {
             </select>
             <p className="mt-4 text-[#45556c] font-medium">Add Address +</p>
             <div className="border-b border-gray-300 w-[320px] pb-4"></div>
+            <div>
+              <div className="flex justify-between pt-2">
+                <p className="text-[#90a1b9]">Subtotal:</p>
+                <span className="text-[#62748e]">$29</span>
+              </div>
+              <div className="flex justify-between pt-2">
+                <p className="text-[#90a1b9]">Shipping:</p>
+                <span
+                  className="text-[#62748e
+]"
+                >
+                  Free
+                </span>
+              </div>
+              <div className="flex gap-4 pt-4">
+                <input
+                  className="w-63.25 h-8.5 border rounded-[5px] p-2 border-[#90a1b9]"
+                  type="text"
+                  placeholder="Coupon Code"
+                />
+                <button className="w-14 rounded-[5px] h-9 border bg-[#425768] text-xs font-medium text-white ">
+                  Apply
+                </button>
+              </div>
+              <div className="border-b border-gray-300 w-[320px] pb-4"></div>
+              <div className="flex flex-col gap-2">
+                <div className="flex justify-between">
+                  <p className="text-[#90a1b9]">Total:</p>
+                  <span
+                    className="text-[#62748e
+]"
+                  >
+                    $29
+                  </span>
+                </div>
+                <button className="w-full bg-[#425768] font-medium text-white p-2 ">
+                  Place Order
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
