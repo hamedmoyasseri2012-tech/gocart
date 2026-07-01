@@ -35,13 +35,10 @@ const ShopPage = () => {
         </div>
         <div className="grid grid-cols-2 gap-2 sm:gap-2 sm:grid-cols-4 sm:pl-16">
           {products.map((product) => (
-            <div className="flex flex-col gap-4">
-              <div
-                key={product.id}
-                className="border border-white p-3  w-38.5 h-40 sm:w-60 sm:h-68 rounded-xl "
-              >
+            <div key={product.id} className="flex flex-col gap-4">
+              <div className="border border-white p-3  w-38.5 h-40 sm:w-60 sm:h-68 rounded-xl ">
                 <img
-                  src={product.image}
+                  src={product.images?.[0]}
                   alt={product.title}
                   className=" w-38.5 h-40 sm:w-60 sm:h-68 sm:hover:transition sm:hover:duration-300 sm:hover:scale-105 sm:hover:rounded-xl"
                 />
@@ -57,13 +54,13 @@ const ShopPage = () => {
                   </i>
                   <i>
                     <RiStarSFill />
-                  </i>{" "}
+                  </i>
                   <i>
                     <RiStarSFill />
-                  </i>{" "}
+                  </i>
                   <i>
                     <RiStarSFill />
-                  </i>{" "}
+                  </i>
                   <i>
                     <RiStarSFill />
                   </i>
