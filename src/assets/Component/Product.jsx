@@ -4,6 +4,7 @@ import Header from "./Header";
 const Product = () => {
   return <div>
     <Header/>
+    
     <Footer/>
   </div>;
 };

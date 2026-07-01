@@ -6,7 +6,7 @@ const Banner = () => {
     <>
       <div className="flex relative flex-col justify-center items-center pt-6 gap-4 sm:flex-row sm:justify-center sm:items-center">
         <div className="bg-[#b9f7ce] border  sm:w-219 sm:h-119 sm:flex sm:justify-between  border-[#b9f7ce] rounded-xl w-95.75 h-172 flex flex-col pl-4 gap-4 pt-4 justify-start items-start">
-          <div className="sm:flex sm:flex-row">
+          <div className="flex flex-col sm:flex sm:flex-row">
             <div className="gap-6 flex flex-col sm:pt-20 sm:pl-14">
               <div className="border bg-[#7af1a8] border-[#7af1a8] w-fit h-8 rounded-xl  flex justify-center items-center">
                 <p className="text-center flex justify-center items-center text-xs text-[#1dab62]">
@@ -32,9 +32,9 @@ const Banner = () => {
                 <button>Learn More</button>
               </div>
             </div>
-            <div>
+            <div className="flex flex-col justify-end items-end -mt-5 sm:-mb-9">
               <img
-                className=" w-95.5 h-101 top-77 absolute  left-6 sm:top-24 sm:left-130"
+                className=" w-95.5 h-101 "
                 src="./public/hero_model.png"
                 alt=""
               />
