@@ -7,11 +7,9 @@ const Cart = () => {
   return (
     <div>
       <Header />
-      <div
-        className="flex flex-col  sm:flex  sm:flex-row w-full sm:justify-center "
-      >
-        <div >
-          <div className="flex flex-col gap-2 p-4 sm:pl-24 sm:w-275 ">
+      <div className="flex flex-col  sm:flex  sm:flex-row w-full sm:justify-center ">
+        <div>
+          <div className="flex flex-col gap-2 pl-4 pt-4 sm:pl-24 sm:w-275 ">
             <h1 className="text-2xl font-bold">My Cart</h1>
             <div className="flex gap-2">
               items in your cart
@@ -57,7 +55,9 @@ const Cart = () => {
                   <span>0</span>
                   <button>+</button>
                 </div>
-                <span className="sm:text-center sm:flex sm:justify-center sm:items-center">$29</span>
+                <span className="sm:text-center sm:flex sm:justify-center sm:items-center">
+                  $29
+                </span>
                 <div className="hidden sm:flex sm:text-[#fb2c36] sm:text-xl">
                   <i>
                     <RiDeleteBin6Line />
@@ -67,7 +67,43 @@ const Cart = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center  border h-125 w-90 border-[#e2e8f0] rounded-xl sm:flex "></div>
+        <div className="flex flex-col bg-[#fdfeff] justify-start items-start p-4 gap-6 border h-125 w-90 ml-10 border-[#e2e8f0] rounded-xl sm:flex sm:mt-28 sm:mr-4 ">
+          <h1 className="uppercase font-medium">Payment Summary</h1>
+          <p className="text-[#90a1b9]">Payment Method</p>
+          <div className="flex flex-col">
+            <div className="flex gap-2">
+              <input className="text-[#90a1b9]" type="radio" />
+              <label className="text-[#90a1b9]" htmlFor="">
+                COD
+              </label>
+            </div>
+            <div className="flex gap-2">
+              <input className="text-[#90a1b9]" type="radio" />
+              <label className="text-[#90a1b9]" htmlFor="">
+                Stripe Payment
+              </label>
+            </div>
+            <div className="border-b border-gray-300 w-[320px] pb-4"></div>
+            <p className="text-[#90a1b9] pt-4">Address</p>
+            <select
+              className="border w-76.75 h-10 border-[#90a1b9] text-[#90a1b9] mt-4 "
+              name=""
+              id=""
+            >
+              <option
+                className="text-[#90a1b9] flex justify-center items-center"
+                value=""
+              >
+                Select Address
+              </option>
+              <option className="text-xs" value="0">
+                "John due" "," "New york" "," "NY" "," "10001"
+              </option>
+            </select>
+            <p className="mt-4 text-[#45556c] font-medium">Add Address +</p>
+            <div className="border-b border-gray-300 w-[320px] pb-4"></div>
+          </div>
+        </div>
       </div>
     </div>
   );
