@@ -1,4 +1,5 @@
 // import { useEffect, useState } from "react";
+import { Link } from "react-router";
 import Footer from "./Footer";
 import Header from "./Header";
 import { useState, useEffect } from "react";
@@ -32,7 +33,11 @@ const ShopPage = () => {
             <span className="text-[#869aae] ">All</span> Products
           </h1>
         </div>
-        <div className="grid grid-cols-2 gap-2 sm:gap-2 sm:grid-cols-4 sm:pl-16">
+        <Link
+          key={products.id}
+          to={"/product/${product.id}"}
+          className="grid grid-cols-2 gap-2 sm:gap-2 sm:grid-cols-4 sm:pl-16"
+        >
           {products.map((product) => (
             <div key={product.id} className="flex flex-col gap-4">
               <div className="border border-white p-3 w-40 h-40 sm:w-60 sm:h-68 rounded-2xl ">
@@ -67,7 +72,7 @@ const ShopPage = () => {
               </div>
             </div>
           ))}
-        </div>
+        </Link>
       </div>
       <Footer />
     </>

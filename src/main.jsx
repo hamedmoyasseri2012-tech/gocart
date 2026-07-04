@@ -6,10 +6,10 @@ import "./index.css";
 import App from "./App.jsx";
 import ShopPage from "./assets/Component/ShopPage.jsx";
 import Cart from "./assets/Component/Cart.jsx";
-import Product from "./assets/Component/Product.jsx";
 import Alert from "./assets/Component/Alert.jsx";
 import Order from "./assets/Component/Order.jsx";
 import addAddress from "./assets/Component/addAddress.jsx";
+import ProductDetails from "./assets/Component/ProductDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,10 +25,7 @@ const router = createBrowserRouter([
     path: "/cart",
     Component: Cart,
   },
-  {
-    path: "/product",
-    Component: Product,
-  },
+
   {
     path: "/alert",
     Component: Alert,
@@ -40,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/address",
     Component: addAddress,
+  },
+  {
+    path: "/product/:id",
+    Component: ProductDetails,
   },
 ]);
 

@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const addAddress = () => {
   return (
     <div className="relative">
-      <div className="flex flex-col justify-center items-center h-screen  gap-4">
+      <div className="flex flex-col justify-center items-center h-screen  gap-4 ">
         <div className="flex items-start text-start">
           <h1 className="text-[#314158] text-3xl items-start">
             Add New <span className="text-[#314158] font-bold">Address</span>
