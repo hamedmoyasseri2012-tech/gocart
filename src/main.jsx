@@ -7,6 +7,9 @@ import App from "./App.jsx";
 import ShopPage from "./assets/Component/ShopPage.jsx";
 import Cart from "./assets/Component/Cart.jsx";
 import Product from "./assets/Component/Product.jsx";
+import Alert from "./assets/Component/Alert.jsx";
+import Order from "./assets/Component/Order.jsx";
+import addAddress from "./assets/Component/addAddress.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +28,18 @@ const router = createBrowserRouter([
   {
     path: "/product",
     Component: Product,
+  },
+  {
+    path: "/alert",
+    Component: Alert,
+  },
+  {
+    path: "/order",
+    Component: Order,
+  },
+  {
+    path: "/address",
+    Component: addAddress,
   },
 ]);
 

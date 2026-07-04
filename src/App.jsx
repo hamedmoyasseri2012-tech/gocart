@@ -5,6 +5,9 @@ import Section from "./assets/Component/Section";
 import Footer from "./assets/Component/Footer";
 import ProductsLatest from "./assets/Component/ProductsLatest";
 import ProductsSell from "./assets/Component/ProductsSell";
+import Alert from "./assets/Component/Alert";
+import { Toaster } from "react-hot-toast";
+
 
 const App = () => {
 
@@ -12,6 +15,8 @@ const App = () => {
   
   return (
     <>
+      <Toaster position="top-center" />
+      <Alert />
       <Header />
       <Banner />
       <Swiper />

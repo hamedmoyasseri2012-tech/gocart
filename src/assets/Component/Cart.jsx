@@ -73,13 +73,19 @@ const Cart = () => {
           <p className="text-[#90a1b9]">Payment Method</p>
           <div className="flex flex-col">
             <div className="flex gap-2">
-              <input className="text-[#90a1b9] accent-gray-500" type="radio" />
+              <input
+                className="text-[#90a1b9] accent-gray-500 cursor-pointer"
+                type="radio"
+              />
               <label className="text-[#90a1b9]" htmlFor="">
                 COD
               </label>
             </div>
             <div className="flex gap-2">
-              <input className="text-[#90a1b9] accent-gray-500" type="radio" />
+              <input
+                className="text-[#90a1b9] accent-gray-500 cursor-pointer"
+                type="radio"
+              />
               <label className="text-[#90a1b9]" htmlFor="">
                 Stripe Payment
               </label>
@@ -101,7 +107,9 @@ const Cart = () => {
                 "John due" "," "New york" "," "NY" "," "10001"
               </option>
             </select>
-            <p className="mt-4 text-[#45556c] font-medium">Add Address +</p>
+            <Link to="/address" className="mt-4 text-[#45556c] font-medium">
+              Add Address +
+            </Link>
             <div className="border-b border-gray-300 w-[320px] pb-4"></div>
             <div>
               <div className="flex justify-between pt-2">
@@ -119,7 +127,7 @@ const Cart = () => {
               </div>
               <div className="flex gap-4 pt-4">
                 <input
-                  className="w-63.25 h-8.5 border rounded-[5px] p-2 border-[#90a1b9]"
+                  className="w-63.25 h-8.5 border rounded-[5px] p-2 border-[#90a1b9] "
                   type="text"
                   placeholder="Coupon Code"
                 />
@@ -138,14 +146,18 @@ const Cart = () => {
                     $29
                   </span>
                 </div>
-                <button className="w-full bg-[#425768] font-medium text-white p-2 ">
+                <Link
+                  to="/order"
+                  className="w-full bg-[#425768] font-medium text-center text-white p-2 "
+                >
                   Place Order
-                </button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
       <Footer />
     </div>
   );
