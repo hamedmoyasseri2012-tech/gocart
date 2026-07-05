@@ -39,7 +39,7 @@ const router = createBrowserRouter([
     Component: addAddress,
   },
   {
-    path: "/product/:id",
+    path: "/product/:id ",
     Component: ProductDetails,
   },
 ]);

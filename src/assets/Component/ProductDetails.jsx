@@ -1,13 +1,15 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { useEffect, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Alert from "./Alert";
+import { RiStarSFill } from "react-icons/ri";
 
 const ProductDetails = () => {
   const { id } = useParams();
   console.log(id);
   const [product, setProduct] = useState(null);
+  // const item = product.find((item) => item.id === id);
 
   useEffect(() => {
     const getProduct = async () => {
@@ -33,15 +35,40 @@ const ProductDetails = () => {
     <div>
       <Alert />
       <Header />
-      <div className="flex flex-col justify-center items-center">
-        <img src={product.images?.[0]} alt={product.title} width={300} />
-
-        <h1>{product.title}</h1>
-
-        <h2>${product.price}</h2>
-
-        <p>{product.description}</p>
-      </div>
+      <Link to={"/product/${item.id}"}>
+        <div key={product.id} className="flex flex-col gap-4">
+          <div className="border border-white p-3 w-40 h-40 sm:w-60 sm:h-68 rounded-2xl ">
+            <img
+              src={product.images?.[0]}
+              alt={product.title}
+              className=" w-38.5 h-40 sm:w-60 sm:h-68 sm:hover:transition sm:hover:duration-300 sm:hover:scale-105 sm:hover:rounded-xl"
+            />
+          </div>
+          <div className="flex flex-col  gap-1 w-40 h-11 sm:w-60 sm:h-11  ">
+            <div className="flex justify-between items-center text-xs">
+              <h3>{product.title}</h3>
+              <span>${product.price}</span>
+            </div>
+            <div className="flex gap-1 text-green-600">
+              <i>
+                <RiStarSFill />
+              </i>
+              <i>
+                <RiStarSFill />
+              </i>
+              <i>
+                <RiStarSFill />
+              </i>
+              <i>
+                <RiStarSFill />
+              </i>
+              <i>
+                <RiStarSFill />
+              </i>
+            </div>
+          </div>
+        </div>
+      </Link>
 
       <Footer />
     </div>
