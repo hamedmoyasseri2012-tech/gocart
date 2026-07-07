@@ -10,7 +10,7 @@ const ProductsLatest = () => {
     const getProducts = async () => {
       try {
         const response = await fetch(
-          "https://api.escuelajs.co/api/v1/products?categoryId=2",
+          "https://api.escuelajs.co/api/v1/products",
         );
         const data = await response.json();
 
@@ -27,7 +27,10 @@ const ProductsLatest = () => {
       <h1 className="text-2xl font-medium">Latest Products</h1>
       <div className="flex  item-center gap-8">
         <p>Showing 4 of 12 products</p>
-        <Link to="shop-page" className="flex gap-2 items-center text-[#36ab62]">
+        <Link
+          to="/shop-page"
+          className="flex gap-2 items-center text-[#36ab62]"
+        >
           <p>View More</p>
           <i>
             <FaArrowRight />
@@ -35,40 +38,47 @@ const ProductsLatest = () => {
         </Link>
       </div>
       <div className="grid grid-cols-2 gap-2 sm:gap-2 sm:grid-cols-4 sm:pl-16">
-        {products.slice(0,4).map((product) => (
-          <div key={product.id} className="flex flex-col gap-4">
-            <div className="border border-white p-3 w-40 h-40 sm:w-60 sm:h-68 rounded-2xl ">
-              <img
-                src={product.images?.[0]}
-                alt={product.title}
-                className=" w-38.5 h-40 sm:w-60 sm:h-68 sm:hover:transition sm:hover:duration-300 sm:hover:scale-105 sm:hover:rounded-xl"
-              />
-            </div>
-            <div className="flex flex-col  gap-1 w-40 h-11 sm:w-60 sm:h-11  ">
-              <div className="flex justify-between items-center text-xs">
-                <h3>{product.title}</h3>
-                <span>${product.price}</span>
+        {products
+          .reverse()
+          .slice(0, 4)
+          .map((product) => (
+            <Link
+              to={`/product/${product.id}`}
+              key={product.id}
+              className="flex flex-col gap-4"
+            >
+              <div className="border border-white p-3 w-40 h-40 sm:w-60 sm:h-68 rounded-2xl ">
+                <img
+                  src={product.images?.[0]}
+                  alt={product.title}
+                  className=" w-38.5 h-40 sm:w-60 sm:h-68 sm:hover:transition sm:hover:duration-300 sm:hover:scale-105 sm:hover:rounded-xl"
+                />
               </div>
-              <div className="flex gap-1 text-green-600">
-                <i>
-                  <RiStarSFill />
-                </i>
-                <i>
-                  <RiStarSFill />
-                </i>
-                <i>
-                  <RiStarSFill />
-                </i>
-                <i>
-                  <RiStarSFill />
-                </i>
-                <i>
-                  <RiStarSFill />
-                </i>
+              <div className="flex flex-col  gap-1 w-40 h-11 sm:w-60 sm:h-11  ">
+                <div className="flex justify-between items-center text-xs">
+                  <h3>{product.title}</h3>
+                  <span>${product.price}</span>
+                </div>
+                <div className="flex gap-1 text-green-600">
+                  <i>
+                    <RiStarSFill />
+                  </i>
+                  <i>
+                    <RiStarSFill />
+                  </i>
+                  <i>
+                    <RiStarSFill />
+                  </i>
+                  <i>
+                    <RiStarSFill />
+                  </i>
+                  <i>
+                    <RiStarSFill />
+                  </i>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            </Link>
+          ))}
       </div>
     </div>
   );
