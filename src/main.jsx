@@ -10,6 +10,7 @@ import Alert from "./assets/Component/Alert.jsx";
 import Order from "./assets/Component/Order.jsx";
 import addAddress from "./assets/Component/addAddress.jsx";
 import ProductDetails from "./assets/Component/ProductDetails.jsx";
+import HappyShop from "./assets/Component/HappyShop.jsx";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/product/:id",
     Component: ProductDetails,
+  },
+  {
+    path: "/happyshop/",
+    Component: HappyShop,
   },
 ]);
 
